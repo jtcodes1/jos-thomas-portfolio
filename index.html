@@ -561,6 +561,15 @@
     .muted {
       color: var(--text-muted);
     }
+
+    /* subtle highlight for proof links only */
+    .proof-link:hover {
+      color: #c8d6ff;
+      text-decoration: underline;
+      text-decoration-color: rgba(200, 214, 255, 0.4);
+      text-underline-offset: 3px;
+    }
+
   </style>
 </head>
 <body>
@@ -727,9 +736,14 @@
             <div>
               <div class="card-title">Computational Research Intern</div>
               <div class="card-subtitle">Los Alamos National Laboratory · Remote</div>
-              <a href="https://oreu.engr.tamu.edu/2025-o-reu-summer-students/" target="_blank" rel="noopener" class="muted" style="font-size:0.75rem;">
-  Texas A&amp;M O-REU 2025 Cohort Listing →
-</a>
+              <a href="https://oreu.engr.tamu.edu/2025-o-reu-summer-students/"
+                 target="_blank"
+                 rel="noopener"
+                 class="muted proof-link"
+                 style="font-size:0.75rem;">
+                 Texas A&amp;M O-REU 2025 Cohort Listing →
+               </a>
+
 
             </div>
             <div class="card-meta">May 2025 – Aug 2025</div>
@@ -809,9 +823,14 @@
             <div>
               <div class="card-title">Linux Specialist</div>
               <div class="card-subtitle">How-To Geek · Remote</div>
-              <a href="https://www.howtogeek.com/author/jos-thomas/" target="_blank" rel="noopener" class="muted" style="font-size:0.75rem;">
-  View author page →
-</a>
+             <a href="https://www.howtogeek.com/author/jos-thomas/"
+                target="_blank"
+                rel="noopener"
+                class="muted proof-link"
+                style="font-size:0.75rem;">
+              View author page →
+            </a>
+
 
             </div>
             <div class="card-meta">Dec 2024 – May 2025</div>
@@ -1100,7 +1119,7 @@
       <div class="contact-card">
         <div class="contact-text">
           <div>Open to <span>software engineering, research, and data-oriented roles</span>, especially those that mix code, models, and real systems.</div>
-          <div class="muted" style="margin-top:0.3rem;">Best way to reach me is by email. I am based in Chicago and available for remote positions across the US.</div>
+          <div class="muted" style="margin-top:0.3rem;">Best way to reach me is by email. I am based in Chicago and available for remote positions across the U.S.</div>
         </div>
         <div class="contact-actions">
           <a class="btn" href="mailto:jos_tm@icloud.com">

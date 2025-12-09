@@ -410,36 +410,39 @@
       color: #f4f4ff;
     }
 
-    .card-meta {
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      white-space: nowrap;
-    }
+   /* === Readability Boost for Experience & Project Text === */
 
-    .card-subtitle {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      margin-bottom: 0.4rem;
-    }
+/* Company subtitle + small verification links */
+.card-subtitle,
+.card-header a {
+  font-size: 0.9rem;
+}
 
-    .card-body {
-      font-size: 0.94rem;
-      color: var(--text-muted);
-      margin-bottom: 0.5rem;
-    }
+/* Date range on the right */
+.card-meta {
+  font-size: 0.85rem;
+}
 
-    .card-list {
-      list-style: none;
-      padding-left: 0;
-      display: grid;
-      gap: 0.5rem;
-      font-size: 0.9rem;
-      color: var(--text-muted);
-    }
+/* Main description paragraph in each card */
+.card-body {
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+/* Bullet list text */
+.card-list {
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+/* Tags at the bottom (Python, ASE, etc.) */
+.tag {
+  font-size: 0.8rem;
+}
 
     .card-list li {
       display: flex;
-      gap: 0.35rem;
+      gap: 0.5rem;
     }
 
     .card-list-bullet {

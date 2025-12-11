@@ -542,17 +542,6 @@
       /* --margin-top: 1rem; */ 
     }
 
-    footer {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 8rem 1rem 1rem;
-      font-size: 0.78rem;
-      color: var(--text-muted);
-      /*border-top: 1px solid rgba(255, 255, 255, 0.06);*/
-      /* margin-top: 1rem;*/
-      /* margin-bottom: 1rem;*/
-    }
-
     /* Small helper */
     .muted {
       color: var(--text-muted);
@@ -582,26 +571,33 @@
         0 0 14px rgba(150, 170, 255, 0.55);
     }
     
-    /* footer base, soft glow + transition */
-    footer span {
-      color: var(--text-muted) !important;
-      display: inline-block;   
-      transition:
-        color 0.3s ease,
-        text-shadow 0.3s ease,
-        transform 0.22s ease;
-      
-      text-shadow:
-        0 0 4px rgba(120, 100, 200, 0.25);
+    footer {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 8rem 1rem 1rem;
+      font-size: 0.78rem;
+      color: var(--text-muted);
     }
     
-    /* footer hover, purple glow + slight lift */
-    footer span:hover {
-      color: #c8b5ff !important;
+    /* ⚡ Footer glow on whole line */
+    #footer-text {
+      color: #b9a8ff !important; /* darker, visible base */
+      display: inline-block;
       text-shadow:
-        0 0 6px rgba(180, 150, 255, 0.55),
-        0 0 12px rgba(150, 120, 255, 0.40);
-      
+        0 0 3px rgba(160, 130, 255, 0.45); /* subtle always-on */
+      transition:
+        color 0.25s ease,
+        text-shadow 0.25s ease,
+        transform 0.22s ease;
+    }
+        
+    #footer-text:hover {
+      color: #f4ecff !important;
+      text-shadow:
+        0 0 8px rgba(200, 170, 255, 1),
+        0 0 18px rgba(180, 140, 255, 1),
+        0 0 32px rgba(150, 110, 255, 1),
+        0 0 50px rgba(130, 90, 240, 1);
       transform: translateY(-2px);
       cursor: default;
     }

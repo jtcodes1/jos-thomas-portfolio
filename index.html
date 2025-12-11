@@ -564,21 +564,26 @@
 
     /* subtle highlight for proof links always */
     .proof-link {
-      color: #c8d6ff;
+      color: #cfd9ff !important;
       text-decoration: underline;
       text-decoration-color: rgba(200, 214, 255, 0.35);
       text-underline-offset: 3px;
     
-      /* soft glow */
-      text-shadow: 0 0 6px rgba(135, 170, 255, 0.35);
-      transition: all 0.18s ease-out;
+      /* stronger glow */
+      text-shadow: 
+        0 0 6px rgba(135, 170, 255, 0.35),
+        0 0 8px rgba(120, 150, 255, 0.35);
+    
+      transition: all 0.2s ease-out;
     }
     
     /* stronger glow on hover */
     .proof-link:hover {
-      color: #dbe6ff;
-      text-decoration-color: rgba(200, 214, 255, 0.6);
-      text-shadow: 0 0 10px rgba(150, 190, 255, 0.55);
+      color: #e4eaff !important; 
+      text-decoration-color: rgba(200, 214, 255, 0.65);
+      text-shadow:
+        0 0 6px rgba(150, 190, 255, 0.55),
+        0 0 14px rgba(150, 170, 255, 0.55);
     }
 
 

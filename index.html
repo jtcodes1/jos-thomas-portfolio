@@ -584,14 +584,16 @@
     #footer-text {
       display: inline-block;
       color: var(--text-muted); /* normal gray */
+      text-shadow: 0 0 0=4px rgba(120, 100, 200, 0.25);
       transition:
         color 0.3s ease,
         text-shadow 0.2s ease,
         transform 0.22s ease;
+      pointer-events: auto;
     }
     
     /* purple glow only on hover */
-    footer:hover{
+    #footer-text:hover{
       color: #000000 !important;
       background: yellow !important;
       border: 3px solid lime !important;

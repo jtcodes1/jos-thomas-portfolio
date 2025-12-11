@@ -572,33 +572,34 @@
         0 0 14px rgba(150, 170, 255, 0.55);
     }
     
-    footer {
+    /* base footer layout */
+    .site-footer {
       max-width: var(--max-width);
       margin: 0 auto;
       padding: 8rem 1rem 1rem;
       font-size: 0.78rem;
-      /*color: var(--text-muted);*/
     }
     
-    /* footer base */
-    #footer-text {
+    /* footer base, soft glow + transition */
+    .footer-wrapper {
+      color: var(--text-muted);
       display: inline-block;
-      color: var(--text-muted); /* normal gray */
-      text-shadow: 0 0 0=4px rgba(120, 100, 200, 0.25);
       transition:
         color 0.3s ease,
-        text-shadow 0.2s ease,
+        text-shadow 0.3s ease,
         transform 0.22s ease;
-      pointer-events: auto;
+      text-shadow:
+        0 0 4px rgba(120, 100, 200, 0.25);
     }
     
-    /* purple glow only on hover */
-    #footer-text:hover{
-      color: #000000 !important;
-      background: yellow !important;
-      border: 3px solid lime !important;
-      transform: translateY(-10px) scale 1.2 !important;
-      cursor: pointer !important;
+    /* footer hover, purple glow + slight lift */
+    .footer-wrapper:hover {
+      color: #c8b5ff;
+      text-shadow:
+        0 0 6px rgba(163, 113, 247, 0.6),
+        0 0 12px rgba(163, 113, 247, 0.4);
+      transform: translateY(-2px);
+      cursor: default;
     }
     
 
@@ -1190,34 +1191,15 @@
   </main>
 
   <!-- footer -->
-  <footer>
-    <span id="footer-text">
-      © <span id="year"></span> Jos Thomas. Built with HTML &amp; CSS and hosted on GitHub Pages.
-    </span>
+  <footer class="site-footer">
+    <div class="footer-wrapper">
+      <span id="year"></span> Jos Thomas. Built with HTML &amp; CSS and hosted on GitHub Pages.
+    </div>
   </footer>
-
-
+  
   <script>
     // Set current year in footer
     document.getElementById("year").textContent = new Date().getFullYear();
-
-    // Hover glow handled via JS to avoid weird CSS conflicts
-    const footerText = document.getElementById("footer-text");
-  
-    footerText.addEventListener("mouseenter", () => {
-      footerText.style.color = "#c8b5ff";
-      footerText.style.textShadow =
-        "0 0 6px rgba(163, 113, 247, 0.6), 0 0 12px rgba(163, 113, 247, 0.4)";
-      footerText.style.transform = "translateY(-2px)";
-      footerText.style.cursor = "pointer";
-    });
-  
-    footerText.addEventListener("mouseleave", () => {
-      footerText.style.color = "var(--text-muted)";
-      footerText.style.textShadow = "0 0 4px rgba(120, 100, 200, 0.25)";
-      footerText.style.transform = "none";
-      footerText.style.cursor = "default";
-    });    
   </script>
 </body>
 </html>

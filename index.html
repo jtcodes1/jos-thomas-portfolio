@@ -602,7 +602,65 @@
       transform: translateY(-2px);
       cursor: default;
     }
+
+    /* phone optimization patch */
+
+    @media (max-width: 480px) {
+      body {
+        font-size: 18px;
+      }
     
+      .hero {
+        grid-template-columns: 1fr !important;
+        text-align: left;
+      }
+    
+      .hero-links {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      .btn {
+        width: 100%;
+        justify-content: center;
+      }
+    
+      .grid.grid-2 {
+        grid-template-columns: 1fr !important;
+      }
+    
+      section {
+        margin-bottom: 1.8rem;
+      }
+    
+      .card {
+        padding: 1rem !important;
+      }
+    
+      .card-body {
+        font-size: 0.85rem !important;
+      }
+    
+      .card-title {
+        font-size: 1rem !important;
+      }
+    }
+    
+    /* hide nav links on small screens (for future hamburger menu) */
+    @media (max-width: 600px) {
+      .nav-links {
+        display: none;
+      }
+    }
+    
+    /* prevent horizontal scrolling */
+    html, body {
+      overflow-x: hidden;
+    }
+    
+    
+    
+        
 
 
     
@@ -652,6 +710,7 @@
 
         <div class="hero-quick-meta">
           <div class="meta-item"><b>B.S. Computer Science</b> · DePaul University</div>
+          <div class="meta-item"><b>GPA:</b> 4.0</div>
           <div class="meta-item"><b>Grad:</b> Spring 2027</div>
           <div class="meta-item"><b>Location:</b> Chicago · US citizen</div>
         </div>

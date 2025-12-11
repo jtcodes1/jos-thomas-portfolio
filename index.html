@@ -483,10 +483,9 @@
     /* Skills */
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);  /* 3 columns */
-      grid-template-rows: repeat(2, auto);    /* 2 rows */
-      gap: 0.75rem;
-     }
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.2rem;
+    }
 
     .skills-column-title {
       font-size: 0.82rem;
@@ -696,7 +695,7 @@
         </h1>
         <p class="hero-subtitle">
           I’m a Computer Science student at DePaul University and a Research Software Developer Intern at Los Alamos National Laboratory,
-          where I build Python and C++ software for large-scale computation, automation, and internal tooling.
+          where I build Python and C++ software for large-scale computation, automation, and internal developer tools.
         </p>
 
         <div class="hero-badges">
@@ -1154,6 +1153,8 @@
               <span class="skills-pill">SQL</span>
               <span class="skills-pill">MATLAB</span>
               <span class="skills-pill">JavaScript</span>
+              <span class="skills-pill">HTML</span>
+              <span class="skills-pill">CSS</span>
             </div>
           </div>
                 <!-- Software Engineering -->
@@ -1170,12 +1171,12 @@
 
                 <!-- backend + systems -->
           <div>
-            <div class="skills-column-title">Backend & Systems/div>
+         <div class="skills-column-title">Backend & Systems</div>
             <div class="skills-pills">
               <span class="skills-pill">API Design</span>
               <span class="skills-pill">Workflow Automation</span>
               <span class="skills-pill">Data Pipelines</span>
-              <span class="skills-pill">Concurrency</span>
+              <span class="skills-pill">Concurrency (intro)</span>
               <span class="skills-pill">CLI Tools</span>
             </div>
           </div>

@@ -1200,6 +1200,24 @@
   <script>
     // Set current year in footer
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Hover glow handled via JS to avoid weird CSS conflicts
+    const footerText = document.getElementById("footer-text");
+  
+    footerText.addEventListener("mouseenter", () => {
+      footerText.style.color = "#c8b5ff";
+      footerText.style.textShadow =
+        "0 0 6px rgba(163, 113, 247, 0.6), 0 0 12px rgba(163, 113, 247, 0.4)";
+      footerText.style.transform = "translateY(-2px)";
+      footerText.style.cursor = "pointer";
+    });
+  
+    footerText.addEventListener("mouseleave", () => {
+      footerText.style.color = "var(--text-muted)";
+      footerText.style.textShadow = "0 0 4px rgba(120, 100, 200, 0.25)";
+      footerText.style.transform = "none";
+      footerText.style.cursor = "default";
+    });    
   </script>
 </body>
 </html>

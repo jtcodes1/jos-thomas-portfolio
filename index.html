@@ -665,8 +665,28 @@
       overflow-x: hidden;
     }
     
+    /* company logos in experience cards */
+    .company-logo {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+      flex-shrink: 0;
+      margin-right: 0.6rem;
+      opacity: 0.95;
+
+      background: none;
+      border: none;
+      padding: 0;
+     }
     
-    
+    /* left side of card header (logo + text) */
+    .card-header-left {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+     }
+        
+        
         
 
 
@@ -794,14 +814,16 @@
         <!-- LANL RSD Intern -->
         <article class="card">
           <div class="card-header">
-          <div class="card-header-right">
-            <img src="logos/lanl.png"
-                 alt="Los Alamos National Laboratory"
-                 class="company-logo" />
-            <div>
-              <div class="card-title">Research Software Developer Intern</div>
-              <div class="card-subtitle">Los Alamos National Laboratory · Remote</div>
+            <div class="card-header-left">
+              <img src="logos/lanl.png"
+                   alt="Los Alamos National Laboratory"
+                   class="company-logo" />
+              <div>
+                <div class="card-title">Research Software Developer Intern</div>
+                <div class="card-subtitle">Los Alamos National Laboratory · Remote</div>
+              </div>
             </div>
+
             <div class="card-meta">Oct 2025 – Present</div>
           </div>
           <div class="card-body">
@@ -837,26 +859,27 @@
 
         <!-- LANL O-REU Intern -->
         <article class="card">
-          <div class="card-header">
-          <div class="card-header-right">
-            <img src="logos/lanl.png"
-                 alt="Los Alamos National Laboratory"
-                 class="company-logo" />
-            <div>
-              <div class="card-title">Computational Research Intern</div>
-              <div class="card-subtitle">Los Alamos National Laboratory · Remote</div>
-              <a href="https://oreu.engr.tamu.edu/2025-o-reu-summer-students/"
-                 target="_blank"
-                 rel="noopener"
-                 class="muted proof-link"
-                 style="font-size:0.75rem;">
-                 Texas A&amp;M O-REU 2025 Cohort Listing →
-               </a>
-
-
+         <div class="card-header">
+            <div class="card-header-left">
+              <img src="logos/lanl.png"
+                   alt="Los Alamos National Laboratory"
+                   class="company-logo" />
+              <div>
+                <div class="card-title">Computational Research Intern</div>
+                <div class="card-subtitle">Los Alamos National Laboratory · Remote</div>
+                <a href="https://oreu.engr.tamu.edu/2025-o-reu-summer-students/"
+                   target="_blank"
+                   rel="noopener"
+                   class="muted proof-link"
+                   style="font-size:0.75rem;">
+                  Texas A&amp;M O-REU 2025 Cohort Listing →
+                </a>
+              </div>
             </div>
+          
             <div class="card-meta">May 2025 – Aug 2025</div>
           </div>
+
           <div class="card-body">
             Researched 2D CsPbI perovskites by developing a fourth-generation machine-learned
             interatomic potential with explicit long-range electrostatics.
@@ -891,14 +914,16 @@
         <!-- Keats -->
         <article class="card">
           <div class="card-header">
-          <div class="card-header-right">
-            <img src="logos/keats_logo.png"
-                 alt="Keats Manufacturing"
-                 class="company-logo" />
-            <div>
-              <div class="card-title">Junior Software & Data Engineer</div>
-              <div class="card-subtitle">Keats Manufacturing Co. · Wheeling, IL</div>
+            <div class="card-header-left">
+              <img src="logos/keats_logo.png"
+                   alt="Keats Manufacturing"
+                   class="company-logo" />
+              <div>
+                <div class="card-title">Junior Software & Data Engineer</div>
+                <div class="card-subtitle">Keats Manufacturing Co. · Wheeling, IL</div>
+              </div>
             </div>
+            
             <div class="card-meta">June 2016 – Dec 2024</div>
           </div>
           <div class="card-body">
@@ -933,23 +958,24 @@
         <!-- How-To Geek -->
         <article class="card">
           <div class="card-header">
-          <div class="card-header-right">
-            <img src="logos/howtogeek.svg"
-                 alt="How-To Geek"
-                 class="company-logo" />
-            <div>
-              <div class="card-title">Linux Specialist</div>
-              <div class="card-subtitle">How-To Geek · Remote</div>
-             <a href="https://www.howtogeek.com/author/jos-thomas/"
-                target="_blank"
-                rel="noopener"
-                class="muted proof-link"
-                style="font-size:0.75rem;">
-              View author page →
-            </a>
-
-
+            <div class="card-header-left">
+              <img src="logos/howtogeek.svg"
+                   alt="How-To Geek"
+                   class="company-logo" />
+              <div>
+                <div class="card-title">Linux Specialist</div>
+                <div class="card-subtitle">How-To Geek · Remote</div>
+               <a href="https://www.howtogeek.com/author/jos-thomas/"
+                  target="_blank"
+                  rel="noopener"
+                  class="muted proof-link"
+                  style="font-size:0.75rem;">
+                View author page →
+              </a>
+  
+              </div>
             </div>
+            
             <div class="card-meta">Dec 2024 – May 2025</div>
           </div>
           <div class="card-body">

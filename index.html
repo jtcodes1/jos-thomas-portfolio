@@ -703,6 +703,18 @@
       gap: 0.15rem;
     }
         
+    /* button svg icons */
+    .btn-icon {
+      width: 16px;
+      height: 16px;
+      object-fit: contain;
+      opacity: 0.9;
+    }
+    
+    /* github color inversion */
+    .github-icon {
+      filter: invert(1);
+}
             
         
         
@@ -765,14 +777,15 @@
             <span class="btn-pill-icon">✉️</span>
             Email
           </a>
-          <a class="btn btn-outline" href="https://github.com/jtcodes1" target="_blank" rel="noopener">
-            <span class="btn-pill-icon">🐙</span>
-            GitHub
-          </a>
+         <a class="btn btn-outline" href="https://github.com/jtcodes1" target="_blank" rel="noopener">
+           <img src="icons/octocat.svg" alt="GitHub" class="btn-icon github-icon">
+           GitHub
+         </a>
           <a class="btn btn-outline" href="https://www.linkedin.com/in/jos-thomas" target="_blank" rel="noopener">
-            <span class="btn-pill-icon">🔗</span>
+            <img src="icons/linkedin.svg" alt="LinkedIn" class="btn-icon">
             LinkedIn
           </a>
+
           <!-- Resume link for hosting PDF in the repo -->
           <a class="btn btn-outline" href="resume.pdf" target="_blank" rel="noopener">
             <span class="btn-pill-icon">📄</span>
